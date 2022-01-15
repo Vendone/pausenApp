@@ -4,41 +4,58 @@ body {
   background-position: top;
   color: #fff;
   font-size: 2em;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 0px;
+  grid-auto-rows: auto;
   align-items: center;
   justify-content: center;
 }
 
-#quote {
+.header {
+  grid-column: 1/5;
+  grid-row: 1;
+  align-items: center;
+  font-size: 4rem;
+}
+
+.quote {
+  grid-column: 1/5;
+  grid-row: 2;
   border: 2px solid #fff;
   border-radius: 20px;
 }
 
-#author {
-  font-color: #666666;
+.author {
+  grid-column: 4;
+  grid-row: 3;
+  width: 100%;
+  text-align: right;
   font-size: 1rem;
 }
 
-#timer {
+.timer {
+  grid-column: 2/4;
+  grid-row: 4;
   font-size: 4rem;
-  font-color: #fff;
   background-color: #000;
   border: 2px solid;
   border-radius: 20px;
-  margin: 50px;
-  padding: 20px;
+  margin-top: 20px;
 }
 
-#button {
-  width: 400px;
-  height: 75px;
-  position: absolute;
-  bottom: 20px;
-  left: 5px;
-  font-size: 2rem;
+.button {
+  grid-column: 2/4;
+  grid-row: 5;
+  font-size: 4rem;
   font-weight: bold;
-  background-color: #321c1c;
+  background-color: #c25915;
   border-radius: 20px;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
+  margin-top: 50px;
 }

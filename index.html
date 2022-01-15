@@ -11,20 +11,22 @@
 </head>
 
 <body>
-  <div>
-    <h1>Pausentimer</h1>
-  </div>
-  <div id="quote">
-    <p><q>Er kam, Sah und Siegte.</q></p>
-  </div>
-  <div id="author">
-    <cite>Hans von Kanns</cite>
-  </div>
-  <div id="timer">
-    15 : 00
-  </div>
-  <div>
-    <button type="button" id="button" onclick={startTimer()}>Start</button>
+  <div class="container">
+    <div class="header">
+      Pausentimer
+    </div>
+    <div class="quote">
+      <p><q>Er kam, Sah und Siegte.</q></p>
+    </div>
+    <div class="author">
+      <cite>Hans von Kanns</cite>
+    </div>
+    <div class="timer" id="timer">
+      15 : 00
+    </div>
+    <div class="button" onclick="startTimer()">
+      Start
+    </div>
   </div>
 </body>
 
