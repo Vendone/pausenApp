@@ -1,7 +1,7 @@
 {
   "name": "pausenapp",
   "version": "1.0.0",
-  "description": "15 Minuten timer für die Pause",
+  "description": "15 Minuten Timer für die Pause.",
   "main": "index.js",
   "scripts": {
     "test": "test"
