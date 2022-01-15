@@ -1,0 +1,11 @@
+{
+  "name": "pausenapp",
+  "version": "1.0.0",
+  "description": "15 Minuten timer für die Pause",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Andreas Venturin",
+  "license": "ISC"
+}

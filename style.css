@@ -1,0 +1,44 @@
+body {
+  background-image: url(./public/background.jpg);
+  background-size: 150%;
+  background-position: top;
+  color: #fff;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#quote {
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+
+#author {
+  font-color: #666666;
+  font-size: 1rem;
+}
+
+#timer {
+  font-size: 4rem;
+  font-color: #fff;
+  background-color: #000;
+  border: 2px solid;
+  border-radius: 20px;
+  margin: 50px;
+  padding: 20px;
+}
+
+#button {
+  width: 400px;
+  height: 75px;
+  position: absolute;
+  bottom: 20px;
+  left: 5px;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #321c1c;
+  border-radius: 20px;
+  border: 2px solid #fff;
+}
