@@ -42,7 +42,7 @@ body {
 .timer {
   grid-column: 2/4;
   grid-row: 4;
-  font-size: 4rem;
+  font-size: 3.5rem;
   background-color: #000;
   border: 2px solid;
   border-radius: 20px;
