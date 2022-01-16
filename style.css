@@ -46,7 +46,6 @@ body {
   background-color: #000;
   border: 2px solid;
   border-radius: 20px;
-  margin-top: 20px;
 }
 
 .button {
@@ -57,5 +56,4 @@ body {
   background-color: #c25915;
   border-radius: 20px;
   border: 1px solid #fff;
-  margin-top: 50px;
 }
