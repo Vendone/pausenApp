@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pausentimer</title>
   <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
-  <script src="./script.js"></script>
+  <script src="./timer.js"></script>
+  <script src="http://localhost:35729/livereload.js"></script>
 </head>
 
 <body>
@@ -14,10 +15,10 @@
     <div class="header">
       Pausentimer
     </div>
-    <div class="quote">
-      <p><q>Er kam, Sah und Siegte.</q></p>
+    <div id="quote">
+      start
     </div>
-    <div class="author">
+    <div id="author">
       <cite>Hans von Kanns</cite>
     </div>
     <div class="timer" id="timer">
@@ -27,6 +28,7 @@
       Start
     </div>
   </div>
+  <script src="./quote.js" defer></script>
 </body>
 
 </html>

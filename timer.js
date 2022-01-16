@@ -1,10 +1,6 @@
 const alarm = new Audio('./public/alarm.mp3');
 let timerStarted = false;
 
-//Quotes abrufen
-fetch('https://fraze.it/api/famous/all/de/1/no/9d2f86c8-724c-40d2-b62f-bbf772df5b42').then(response => response.json())
-  .then(data => console.log(data));
-
 function startTimer() {
   if (!timerStarted) {
     const startTime = Date.now();
