@@ -17,6 +17,7 @@ function startTimer() {
         let text = minutes + ' : ' + seconds;
         timer.innerHTML = text;
         button.innerHTML = 'Stopp';
+        button.onclick = timerStop();
       } else {
         timer.innerHTML = '00 : 00';
         alarm.play();
