@@ -1,8 +1,9 @@
 const alarm = new Audio('./public/alarm.mp3');
 let timerStarted = false;
-buttonStop.visibility ="hidden";
+
 
 function startTimer() {
+  buttonStop.visibility = "hidden";
   if (!timerStarted) {
     const startTime = Date.now();
     const fifteenMinutes = 15 * 60 * 1000;
