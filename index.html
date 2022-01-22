@@ -2,38 +2,41 @@
 <html lang="de">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pausentimer</title>
-  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
-  <script src="./timer.js"></script>
-  <link rel="manifest" href="./manifest.json">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pausentimer</title>
+    <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
+    <script src="./timer.js"></script>
+    <link rel="manifest" href="./manifest.json">
 </head>
 
 <body>
-  <div class="container">
-    <div class="header">
-      Pausentimer
+    <div class="container">
+        <div class="header">
+            Pausentimer
+        </div>
+        <div id="quotebackground">
+            <div id="quote">
+                start
+            </div>
+        </div>
+        <div id="author">
+            <cite>Hans von Kanns</cite>
+        </div>
+        <div class="timer" id="timer">
+            15 : 00
+        </div>
+        <div id="button" class="button" onclick="startTimer()">
+            Start
+        </div>
+        <div id="buttonStop" class="button" onclick="timerStop()" style="visibility: hidden">
+            Stopp
+        </div>
+        <div id="buttonReset" class="button" onclick="resetTimer()" style="visibility: hidden;">
+            Reset
+        </div>
     </div>
-    <div id="quotebackground">
-      <div id="quote">
-        start
-      </div>
-    </div>
-    <div id="author">
-      <cite>Hans von Kanns</cite>
-    </div>
-    <div class="timer" id="timer">
-      15 : 00
-    </div>
-    <div id="button" class="button" onclick="startTimer()">
-      Start
-    </div>
-    <div id="buttonStop" class="buttonStop" onclick="timerStop()">
-      Stopp
-    </div>
-  </div>
-  <script src="./quote.js" defer></script>
+    <script src="./quote.js" defer></script>
 </body>
 
 </html>
