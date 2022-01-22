@@ -7,7 +7,7 @@ function startTimer() {
     const fifteenMinutes = 15 * 60 * 1000;
     const endTime = startTime + fifteenMinutes;
 
-    setInterval(function() {
+    let interval = setInterval(function() {
       let timeLeft = endTime - Date.now();
       if (timeLeft > 0) {
         let minutes = Math.floor(timeLeft / (1000 * 60));
@@ -22,6 +22,12 @@ function startTimer() {
         alarm.play();
       }
     }, 1000);
+
+    interval()
   }
   timerStarted = true;
+}
+
+function timerStop() {
+  clearInterval(interval);
 }
