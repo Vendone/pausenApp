@@ -1,5 +1,6 @@
 const alarm = new Audio('./public/alarm.mp3');
 let timerStarted = false;
+buttonStop.visibility ="hidden";
 
 function startTimer() {
   if (!timerStarted) {
@@ -16,7 +17,8 @@ function startTimer() {
         seconds = ('0' + seconds).slice(-2);
         let text = minutes + ' : ' + seconds;
         timer.innerHTML = text;
-        button.visability = hide;
+        button.visibility = "hidden";
+        buttonStop.visibility ="visible";
       } else {
         timer.innerHTML = '00 : 00';
         alarm.play();
