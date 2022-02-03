@@ -1,69 +1,82 @@
-body {
-    background-image: url(./public/background.jpg);
-    background-size: 150%;
-    background-position: top;
-    color: #fff;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap: 0px;
-    grid-auto-rows: auto;
-    align-items: center;
-    justify-content: center;
-}
-
-.header {
-    grid-column: 1/5;
-    grid-row: 1;
-    align-items: center;
-    font-size: 4rem;
-}
-
-#quote {
-    grid-column: 1/5;
-    grid-row: 2;
-    border: 2px solid #fff;
-    border-radius: 20px;
-    z-index: 10;
-    color: #fff;
-}
-
-#quotebackground {
-    grid-column: 1/5;
-    grid-row: 2;
-    background-color: #000;
-    opacity: 0.75;
-    border-radius: 20px;
-}
-
-#author {
-    grid-column: 4;
-    grid-row: 3;
-    width: 100%;
-    text-align: right;
-    font-size: 1rem;
-}
-
-.timer {
-    grid-column: 2/4;
-    grid-row: 4;
-    font-size: 3.5rem;
-    background-color: #000;
-    border: 2px solid;
-    border-radius: 20px;
-}
-
-.button {
-    grid-column: 2/4;
-    grid-row: 5;
-    font-size: 4rem;
-    font-weight: bold;
-    background-color: #c25915;
-    border-radius: 20px;
-    border: 1px solid #fff;
-}
+    body {
+        background-image: url(./public/background.jpg);
+        background-size: 150%;
+        background-position: top;
+        color: #fff;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .container {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .header {
+        align-items: center;
+        font-size: 4rem;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    #quote {
+        border: 1px solid #fff;
+        border-radius: 100px;
+        color: #fff;
+        padding: 50px;
+    }
+    
+    #quotebackground {
+        background-color: #000;
+        opacity: 0.75;
+        border-radius: 100px;
+    }
+    
+    #authorbackground {
+        width: 100px;
+        background-color: #000;
+        opacity: 0.75;
+        border-radius: 100px;
+        margin: auto;
+    }
+    
+    #author {
+        width: 100px;
+        font-size: 1rem;
+        margin-bottom: 50px;
+        border: 1px solid #fff;
+        border-radius: 100px;
+        color: #fff;
+    }
+    
+    .timer {
+        width: 50%;
+        font-size: 3.5rem;
+        background-color: #000;
+        border: 1px solid;
+        border-radius: 100px;
+        margin: auto;
+    }
+    
+    .buttonFrame {
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .button {
+        font-size: 2.5rem;
+        font-weight: bold;
+        background-color: #c25915;
+        border-radius: 100px;
+        border: 1px solid #fff;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }

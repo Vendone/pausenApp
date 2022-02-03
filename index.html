@@ -20,20 +20,24 @@
                 start
             </div>
         </div>
-        <div id="author">
-            <cite>Hans von Kanns</cite>
+        <div id="authorbackground">
+            <div id="author">
+                <cite>Hans von Kanns</cite>
+            </div>
         </div>
         <div class="timer" id="timer">
             15 : 00
         </div>
-        <div id="button" class="button" onclick="startTimer()">
-            Start
-        </div>
-        <div id="buttonStop" class="button" onclick="timerStop()" style="visibility: hidden">
-            Stopp
-        </div>
-        <div id="buttonReset" class="button" onclick="resetTimer()" style="visibility: hidden;">
-            Reset
+        <div class="buttonFrame">
+            <div id="button" class="button" onclick="startTimer()">
+                Start
+            </div>
+            <div id="buttonStop" class="button" onclick="timerStop()" style="visibility: hidden">
+                Stopp
+            </div>
+            <div id="buttonReset" class="button" onclick="resetTimer()" style="visibility: hidden;">
+                Reset
+            </div>
         </div>
     </div>
     <script src="./quote.js" defer></script>
